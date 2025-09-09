@@ -1,5 +1,5 @@
 {% set name = "wagtailstreamforms" %}
-{% set version = "5.2.3" %}
+{% set version = "5.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wagtailstreamforms-{{ version }}.tar.gz
-  sha256: 4ac3c91f54e8db069973b27811bf9987fe16f03e3880b4b57d5543039b171c9f
+  sha256: 2b8d8215a49f4e593d3ffc2465ca197d8d4818a4bdd05a65a44b9a7aae1679f6
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
     - python >={{ python_min }}
     - wagtail >=6.0,<8.0
     - unidecode >=0.04.14,<2.0
-    - wagtail-generic-chooser >=0.5.0
+    - wagtail-generic-chooser >=0.7.0
 
 test:
   imports:
